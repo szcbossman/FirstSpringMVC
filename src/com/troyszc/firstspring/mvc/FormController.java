@@ -1,7 +1,10 @@
 package com.troyszc.firstspring.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class FormController {
@@ -15,6 +18,16 @@ public class FormController {
     // a controller to process the form
     @RequestMapping("/processForm")
     public String processForm() {
+        return "pForm";
+    }
+
+    // a controller to read form data and add data to the model
+    @RequestMapping("/processFormVersionTwo")
+    public String shoutName (HttpServletRequest request, Model model) {
+        String theName = request.getParameter("studentName");
+        theName = theName.toUpperCase();
+        String result = "Yo " + theName + " !";
+        model.addAttribute("message", result);
         return "pForm";
     }
 }
