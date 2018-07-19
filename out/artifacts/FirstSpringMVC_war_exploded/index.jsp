@@ -12,6 +12,6 @@
   </head>
   <body>
   $END$
-  <h1>Use /home to direct to home demo page</h1>
+  <h1>Use "/home" path to direct to home demo page</h1>
   </body>
 </html>
