@@ -4,7 +4,7 @@
         <title>Input form</title>
     </head>
     <body>
-        <form action="ProcessForm" method="get">
+        <form action="processForm" method="get">
             <input type="text" name="studentName" placeholder="what's your name bro?" />
             <input type="submit" />
         </form>
