@@ -22,6 +22,11 @@
             Swift <form:radiobutton path="favoriteLanguage" value="Swift"></form:radiobutton>
             Go <form:radiobutton path="favoriteLanguage" value="Go"></form:radiobutton>
             <br>
+            Operating Systems:
+            MacOS <form:checkbox path="operatingSystems" value="MacOS"></form:checkbox>
+            WindowOS <form:checkbox path="operatingSystems" value="WindowOS"></form:checkbox>
+            Linux <form:checkbox path="operatingSystems" value="Linux"></form:checkbox>
+            <br>
             <input type="submit" value="Submit" />
         </form:form>
     </body>
