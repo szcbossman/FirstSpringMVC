@@ -1,13 +1,21 @@
 package com.troyszc.firstspring.mvc;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 
     private String firstName;
     private String lastName;
     private String country;
 
-    public Student () {
+    private LinkedHashMap<String, String> countryOptions;
 
+    public Student () {
+        countryOptions = new LinkedHashMap<>();
+        countryOptions.put("BRZ", "Brazil");
+        countryOptions.put("CHN", "China");
+        countryOptions.put("USA", "United States");
+        countryOptions.put("IDA", "India");
     }
 
     public String getFirstName() {
@@ -32,5 +40,9 @@ public class Student {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public LinkedHashMap<String, String> getCountryOptions() {
+        return countryOptions;
     }
 }
