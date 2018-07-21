@@ -32,7 +32,7 @@ public class CustomerController {
     @RequestMapping("/processForm")
     public String processForm(
             @Valid @ModelAttribute("customer") Customer theCustomer, BindingResult theBindingResult) {
-        System.out.println("DEBUG: " + theBindingResult.getModel());
+        System.out.println("DEBUG: " + theBindingResult);
         if (theBindingResult.hasErrors()) {
             System.out.println("DEBUG: in bindingResult error");
             return "customer-form";
