@@ -11,7 +11,7 @@
 
     <body>
     <i>Please fill out the form below, Asterisk (*) is required fields.</i>
-        <br>
+        <br><br><br>
         <form:form action="processForm" modelAttribute="customer">
             First Name: <form:input path="firstName" ></form:input>
             <br>
@@ -20,6 +20,9 @@
             <br>
             Free Passes: <form:input path="freePasses" ></form:input>
             <form:errors path="freePasses" cssClass="error" ></form:errors>
+            <br>
+            Postal Code: <form:input path="postalCode" ></form:input>
+            <form:errors path="postalCode" cssClass="error" ></form:errors>
             <br>
             <input type="submit" value="Submit" />
         </form:form>
